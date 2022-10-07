@@ -23,21 +23,41 @@ jobs:
         working-directory: C4 - Welcome to Deploying Machine Learning Models in Production/Week 3/C4_W3_Lab_4_Github_Actions/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+#      -
+#        name: Checkout
+#        uses: actions/checkout@v2
+#      -
+#        name: Set up Python
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: '3.7.7'
+#      -
+#        name: Install dependencies
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install numpy fastapi uvicorn scikit-learn pytest
+#      -
+#        name: Test with pytest
+#        run: |
+#          cd app/
+#          pytest
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
-      - 
+      -
         name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.7.7'
-      - 
+      -
         name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install numpy fastapi uvicorn scikit-learn pytest
+          pip install -r requirements.txt
       -
         name: Test with pytest
         run: |
+          cd app/
           pytest
