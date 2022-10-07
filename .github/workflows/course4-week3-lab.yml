@@ -20,7 +20,7 @@ jobs:
         # Use bash as the shell
         shell: bash
         # Specify the working directory for the workflow
-        working-directory: course4/week3-ungraded-labs/C4_W3_Lab_4_Github_Actions/
+        working-directory: C4 - Welcome to Deploying Machine Learning Models in Production/Week 3/C4_W3_Lab_4_Github_Actions/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
