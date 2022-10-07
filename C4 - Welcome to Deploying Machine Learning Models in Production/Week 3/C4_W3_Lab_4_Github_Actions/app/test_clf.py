@@ -3,7 +3,7 @@ from main import clf
 
 
 def test_accuracy():
-    print('!!!!!!jj!!!!!!!!!!!!!')
+    print('!!!!!!jjiii!!!!!!!!!!!!!')
 
     # Load test data
     with open("data/test_data.pkl", "rb") as file:
