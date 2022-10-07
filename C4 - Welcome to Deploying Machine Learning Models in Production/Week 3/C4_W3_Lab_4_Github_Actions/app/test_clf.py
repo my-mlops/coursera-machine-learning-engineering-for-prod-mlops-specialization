@@ -3,6 +3,7 @@ from main import clf
 
 
 def test_accuracy():
+    print('!!!!!!!!!!!!!!!!!!!')
 
     # Load test data
     with open("data/test_data.pkl", "rb") as file:
@@ -10,6 +11,7 @@ def test_accuracy():
 
     # Unpack the tuple
     X_test, y_test = test_data
+    print('!@@@@@@@@@@@@@@@@@@@@@@@', test_data)
 
     # Compute accuracy of classifier
     acc = clf.score(X_test, y_test)
